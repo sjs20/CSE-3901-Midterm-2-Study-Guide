@@ -14,4 +14,4 @@ This repository contains study materials for Midterm 2 (Weeks 6-10) of CSE 3901 
 ### Link to Quizlet Flashcards: https://quizlet.com/1003027749/cse-3901-material-part-2-flash-cards/?i=10omke&x=1jqt\
 
 ### Practice Problems is a pdf of 24 questions to test your knowledge of the course material
-- The solutions to these questions can be found in the 'Practice Problems Answer Key' file.
+The solutions to these questions can be found in the 'Practice Problems Answer Key' file.
