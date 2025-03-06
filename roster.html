@@ -1,0 +1,38 @@
+<!-- Given a roster of students in an array, write a JavaScript function that returns an html list
+ of students (name and midterm score) whose gpa is > 3.0, such that the list is sorted by midterm
+ score -->
+
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Roster</title>
+    </head>
+    <body>
+        <script>
+            // Roster is the given array of students, their gpa, and thei midterm scores
+            let roster = [  {name: "Mary Smith",gpa: 3.7, midterm: 80},
+                            {name: "Xi Chen", gpa: 3.5, midterm: 85},
+                            {name: "Alessandro Reis", gpa: 3.2, midterm: 74},
+                            {name: "Erin Senda", gpa: 3.0, midterm: 68}];
+
+            // Filter the roster of students with gpa > 3.0
+            filtered_roster = roster.filter(student => student.gpa > 3.0);
+
+            // Sort the filtered roster by midterm score
+            sorted_roster = filtered_roster.sort((a, b) => a.midterm - b.midterm);
+
+            // Output will be the list displayed to html page
+            let output = "<ul>";
+            // Map each element in the array to list tags
+            let mapped_roster = sorted_roster.map(student => `<li>${student.name}: ${student.midterm}</li>`);
+            // Add the mapped elements to the output and join each element with a newline
+            output += mapped_roster.join("\n");
+            output += "</ul>";
+
+            // Display the list to the html page
+            document.body.innerHTML = output;
+        </script>
+    </body>
+</html>
